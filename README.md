@@ -45,6 +45,9 @@ For Python 3:
 python -m http.server
 ```
 
+Visit http://localhost:8000 to see your page running. Your code should look something like this:
+![](http://i.giphy.com/eUh8NINbZf9Ys.gif)
+
 
 ## Step by Step
 
