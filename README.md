@@ -17,7 +17,7 @@ We're going to show you how to quickly put together a website with basic compone
 * Responsive design
 * Minor customization
 
-Tutorial time: insert here 
+__Tutorial time: ~20 minutes__
 
 Here's what we're going to create!
 
@@ -258,7 +258,14 @@ The first section of this code adds a background image to the div with the id â€
 
 Fun Fact: Bootstrap 4 is based on Flexbox, but Bootstrap 3 (and earlier versions) is based on floats!
 
+### Bonus: Add images (if you have time!)
+
+Here's a little challenge! 
+
+If you have time, try to flex your Bootstrap layout skills by adding a row of images below the text columns you created. You should do this by creating a new ```container``` with a ```row``` within it, following the best practices demonstrated above. Aim for this row to be 4 images wide; if you do it right, it should dynamically re-size when you change the window size. Reach out to the workshop leaders if you need help!
+
 ## Extras
+
 Tired of hosting things in gh-pages? Surge is a really easy way to quickly deploy projects. If youâ€™re interested in deploying this site, first install surge using a package manager of your choice (brew, npm, yarn, etc.):
 ```npm install --global surge```
 Next, navigate to the directory your project is in and run:
