@@ -222,9 +222,7 @@ Within this frame, plug in this code:
 
 Everything should end up looking something like this... 
  
-<video>
-  <source src="images/demo_example.mov" type="video/mp4">
-</video>
+![final product example](https://media.giphy.com/media/bTEjUk5U8mZZ1RtJyS/giphy.gif)
 
 What the heck?!?!? That’s so much code, what does it mean?? It’s not as complicated as it looks. To create a carousel, we basically just create a bunch of slides and buttons. First, in the ordered list (```<ol>```) with the class value ```carousel-indicators```, we define our clickable slide indicators visible underneath the caption on every slide. Next, we create divs to hold our images and text, which function as our slides. We use the indicators and the class value ```active``` to control which side is displayed. Finally, we create some controls (the little arrows) to make carousel navigation simpler.
 
