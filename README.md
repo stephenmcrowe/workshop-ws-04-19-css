@@ -13,6 +13,7 @@ We're going to show you how to quickly put together a website with basic compone
 * Responsive design
 * Minor customization
 
+Tutorial time: insert here 
 
 ## Part 1: Setup + Creating a Locally Hosted Webpage
 
@@ -44,7 +45,9 @@ python -m http.server
 ```
 
 Visit http://localhost:8000 to see your page running. Your code should look something like this:
-![screen shots are helpful](images/basic-webpage)
+![screen shots are helpful](images/basic-webpage.png)
+And your webpage should look something like this: 
+![screenshot of webpage](images/webpage_screenshot.png)
 
 ## Part 2: Build Using Bootstrap
 Great ~ now that you have a basic webpage hosted, let’s get building! :sunglasses:
@@ -241,14 +244,16 @@ You’ll be asked to verify the directory you want to deploy and to confirm a na
 
 ## Summary / What you Learned
 
-* [ ] can be checkboxes
+* [ ] Boostrap makes building functional UI for web apps (emphasis: mobile) easy! 
+* [ ] Contains scaffolding with column grid system, CSS, JS, glyphicons
+* [ ] add more
 
 ## Reflection
 
 *2 questions for the workshop participants to answer (very short answer) when they submit the workshop. These should try to get at something core to the workshop, the what and the why.*
 
 * [ ] 2 reflection questions
-* [ ] 2 reflection questions
+* [ ] Bootstrap is so easy and quick and makes things pretty!! So, what are some issues/downsides you could see running into by using Bootstrap in the industry?
 
 ## Sources:
 * Background on Bootstrap from:
