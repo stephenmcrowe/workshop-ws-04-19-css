@@ -1,6 +1,8 @@
 # CS52 Workshops:  Introduction to Bootstrap
 
 Brief motivation here as well as in presentation
+![yay memes](images/meme1.png)
+![yay memes part deux](images/meme2.jpg) 
 
 ## Overview
 
