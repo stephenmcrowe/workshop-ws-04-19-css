@@ -1,6 +1,6 @@
 # CS52 Workshops:  Introduction to Bootstrap
 
-Brief motivation here as well as in presentation
+Bootstrap is the most popular front-end framework on the web, and we're going to find out why! Let's learn how easy it is to make a mobile-responsive website with very little custom CSS.
 
 ## Overview
 
@@ -44,7 +44,7 @@ For Python 3:
 python -m http.server
 ```
 
-Visit http://localhost:8000 to see your page running. Your webpage should look something like this: 
+Visit http://localhost:9000 to see your page running. This should be second nature to you after the first few class labs! Your webpage should look something like this: 
 ![screenshot of webpage](images/webpage_screenshot.png)
 
 ## Part 2: Build Using Bootstrap
@@ -155,6 +155,12 @@ We use the ```container``` and ```row``` classes to define the width components 
 </div>
 ```
 Basically, what this code does is define three structures to hold some text information, which each take up different numbers of columns in the Bootstrap grid based on device size. On large devices, they will take up 4 columns (⅓ of the screen) each and sit side by side. On smaller devices, they will take up 12 columns each and they will simply fill the screen. This makes developing websites with responsive design really fast! :zap:
+
+Another note on how Bootstrap approaches columns:
+
+For one, you don't have to specify width! ```<div class="col">``` tells Bootstrap to automatically size every ```div``` in this row as equal width.
+
+Second, Bootstrap operates based on minimum device sizes, so that you don't have to specify grid dimensions for every size of device. So, ```<div class="col-sm-12 col-md-4">``` sets the container to be full-width on smaller devices, and only 4 units wide on any device sized medium or larger.
 
 ### Give your webpage a carousel. 
 Sweet, things are looking good! :nail_care: You’ll notice a lot of automatic styling has been implemented. (We haven’t even opened our own stylesheet!) On to the cool stuff…
