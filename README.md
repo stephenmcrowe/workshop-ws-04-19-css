@@ -44,9 +44,7 @@ For Python 3:
 python -m http.server
 ```
 
-Visit http://localhost:8000 to see your page running. Your code should look something like this:
-![screen shots are helpful](images/basic-webpage.png)
-And your webpage should look something like this: 
+Visit http://localhost:8000 to see your page running. Your webpage should look something like this: 
 ![screenshot of webpage](images/webpage_screenshot.png)
 
 ## Part 2: Build Using Bootstrap
@@ -67,12 +65,12 @@ Bootstrap is a component library, which is an awesome tool because it performs a
 
 Additionally, (as we discussed) Bootstrap operates on a 12 column grid system. Using Bootstrap, you can use classes to define the space you want a component to take on the screen.
 ```
-class=“col-[device size]-[number of columns]”
+class="col-[device size]-[number of columns]"
 ```
 where ```device size``` is ```xs, sm, md,``` or ```lg``` depending on the device, and ```number of columns``` is a number. A caveat here is that the number of columns for every horizontal row should always add up to 12 maximum or else elements will stack.
 
 You can define that space to be different on multiple devices using a class definition like this:
-```class=“col-sm-[number of columns] col-lg-[number of columns]”```
+```class="col-sm-[number of columns] col-lg-[number of columns]"```
 This is awesome because it makes responsive design way easier!
 
 ### Add Bootstrap to Your Website
