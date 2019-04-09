@@ -222,7 +222,7 @@ Within this frame, plug in this code:
 
 Everything should end up looking something like this... 
  
-<video">
+<video>
   <source src="images/demo_example.mov" type="video/mp4">
 </video>
 
