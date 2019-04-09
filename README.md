@@ -58,7 +58,7 @@ Visit http://localhost:8000 to see your page running. This should be second natu
 ## Part 2: Build Using Bootstrap
 Great ~ now that you have a basic webpage hosted, let’s get building! :sunglasses:
 
-### A little background on Bootstrap (optional):
+### A little background on Bootstrap
 Bootstrap is a component library, which is an awesome tool because it performs a lot of styling work for you. Instead of having to build components like full-screen background images and image carousels using all kinds of nested divs and spans, Bootstrap does the work for you in pre-set classes! Some useful classes to know about include:
 ```jumbotron```
 ```btn```
@@ -139,7 +139,10 @@ Refresh your local page, and try re-sizing the browser to see the mobile respons
     <button class="btn btn-dark">I like to code</button>
 </div>
 ```
-This code creates a landing segment with a greeting and button to welcome the user. 
+This code creates a landing segment with a greeting and button to welcome the user.
+
+Your site should look something like this:
+![welcome header](images/navbar-jumbo-button.png)
 
 ### Create some basic content.
 First, let’s define a space to put the content:
@@ -149,7 +152,7 @@ First, let’s define a space to put the content:
     </div>
 </div>
 ```
-We use the ```container``` and ```row``` classes to define the width components should take up within the viewport. Within this new frame, we can plug in our content:
+We use the ```container``` and ```row``` classes to define the width components should take up within the viewport. ```container``` is the parent container that the grid lives in. In Bootstrap, ```row``` is the primary container, and consists of a set of columns. Within this new frame, we can plug in our content:
 ```html
 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
     <h3>I'm column 1</h3>
@@ -166,11 +169,14 @@ We use the ```container``` and ```row``` classes to define the width components 
 ```
 Basically, what this code does is define three structures to hold some text information, which each take up different numbers of columns in the Bootstrap grid based on device size. On large devices, they will take up 4 columns (⅓ of the screen) each and sit side by side. On smaller devices, they will take up 12 columns each and they will simply fill the screen. This makes developing websites with responsive design really fast! :zap:
 
-Another note on how Bootstrap approaches columns:
+Here's what you should have at this point:
+![welcome header](images/columns.png)
+
+_Another note on how Bootstrap approaches columns:_
 
 For one, you don't have to specify width! ```<div class="col">``` tells Bootstrap to automatically size every ```div``` in this row as equal width.
 
-Second, Bootstrap operates based on minimum device sizes, so that you don't have to specify grid dimensions for every size of device. So, ```<div class="col-sm-12 col-md-4">``` sets the container to be full-width on smaller devices, and only 4 units wide on any device sized medium or larger.
+Second, Bootstrap operates based on minimum device sizes, so that you don't have to specify grid dimensions for every size of device. So, ```<div class="col-sm-12 col-md-4">``` sets the container to be full-width on smaller devices, and only 4/12 units wide on any device sized medium or larger.
 
 ### Give your webpage a carousel. 
 Sweet, things are looking good! :nail_care: You’ll notice a lot of automatic styling has been implemented. (We haven’t even opened our own stylesheet!) On to the cool stuff…
@@ -226,17 +232,13 @@ Within this frame, plug in this code:
 </div>
 ```
 
-Everything should end up looking something like this... 
- 
-<video>
-  <source src="images/demo_example.mov" type="video/mp4">
-</video>
-
 What the heck?!?!? That’s so much code, what does it mean?? It’s not as complicated as it looks. To create a carousel, we basically just create a bunch of slides and buttons. First, in the ordered list (```<ol>```) with the class value ```carousel-indicators```, we define our clickable slide indicators visible underneath the caption on every slide. Next, we create divs to hold our images and text, which function as our slides. We use the indicators and the class value ```active``` to control which side is displayed. Finally, we create some controls (the little arrows) to make carousel navigation simpler.
 
 If you want more information specifically on how this code snippet works check out this link:
 <https://getbootstrap.com/docs/4.0/components/carousel/>
 We took the code almost directly from the Bootstrap documentation.
+
+Now, your site should be looking very similar to the example at the top!
 
 ### Customization
 Let’s actually put our stylesheet to work! Using Bootstrap tends to lead to websites that look similar to each other, but you can spice it up by defining some of your own styles. We’re going to put an image behind our first jumbotron as an example. (Note: It is better to link your stylesheet below the Bootstrap stylesheet because it allows you to override Bootstrap’s styles without having to declare levels of importance using ```!important```.)
@@ -244,7 +246,7 @@ Let’s actually put our stylesheet to work! Using Bootstrap tends to lead to we
 Open up style.css and plug in the following code:
 ```css
 #landing.jumbotron {
-   background-image: url("https://picsum.photos/1300/200/?image=29";
+   background-image: url("https://picsum.photos/1300/200/?image=29");
    background-size: cover;
 }
 #landing.jumbotron h1 {
@@ -261,7 +263,7 @@ Tired of hosting things in gh-pages? Surge is a really easy way to quickly deplo
 ```npm install --global surge```
 Next, navigate to the directory your project is in and run:
 ```surge```
-You’ll be asked to verify the directory you want to deploy and to confirm a name for your project. Work through the prompts, and you will be provided a URL that is almost immediately active with a deployed version of your project. More information on surge deployment can be found at <https://surge.sh/>.
+You’ll be asked to verify the directory you want to deploy and to confirm a name for your project. Work through the prompts, and you will be provided a URL that is almost immediately active with a deployed version of your project. You can also change that auto-generated URL to any custom one as long as it's at the domain ```.surge.sh```. More information on surge deployment can be found at <https://surge.sh/>.
 
 ## Final Product
 
