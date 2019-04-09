@@ -2,9 +2,9 @@
 
 Bootstrap is the most popular front-end framework on the web, and we're going to find out why! Let's learn how easy it is to make a mobile-responsive website with very little custom CSS.
 
-![yay memes](images/meme1.png)
+![yay memes](images/meme2.jpg)
 
-![yay memes part deux](images/meme2.jpg) 
+![yay memes part deux](images/meme2.png) 
 
 ## Overview
 
@@ -219,6 +219,11 @@ Within this frame, plug in this code:
     </a>
 </div>
 ```
+
+Everything should end up looking something like this... 
+
+![example of our demo](images/demo_example) 
+
 What the heck?!?!? That’s so much code, what does it mean?? It’s not as complicated as it looks. To create a carousel, we basically just create a bunch of slides and buttons. First, in the ordered list (```<ol>```) with the class value ```carousel-indicators```, we define our clickable slide indicators visible underneath the caption on every slide. Next, we create divs to hold our images and text, which function as our slides. We use the indicators and the class value ```active``` to control which side is displayed. Finally, we create some controls (the little arrows) to make carousel navigation simpler.
 
 If you want more information specifically on how this code snippet works check out this link:
@@ -252,7 +257,7 @@ You’ll be asked to verify the directory you want to deploy and to confirm a na
 
 ## Summary / What you Learned
 
-* [ ] Boostrap makes building functional UI for web apps (emphasis: mobile) easy! 
+* [ ] Bootstrap makes building functional UI for web apps (emphasis: mobile) easy! 
 * [ ] Contains scaffolding with column grid system, CSS, JS, glyphicons
 * [ ] add more
 
