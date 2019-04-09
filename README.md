@@ -142,6 +142,7 @@ Refresh your local page, and try re-sizing the browser to see the mobile respons
 This code creates a landing segment with a greeting and button to welcome the user.
 
 Your site should look something like this:
+
 ![welcome header](images/navbar-jumbo-button.png)
 
 ### Create some basic content.
@@ -170,6 +171,7 @@ We use the ```container``` and ```row``` classes to define the width components 
 Basically, what this code does is define three structures to hold some text information, which each take up different numbers of columns in the Bootstrap grid based on device size. On large devices, they will take up 4 columns (⅓ of the screen) each and sit side by side. On smaller devices, they will take up 12 columns each and they will simply fill the screen. This makes developing websites with responsive design really fast! :zap:
 
 Here's what you should have at this point:
+
 ![welcome header](images/columns.png)
 
 _Another note on how Bootstrap approaches columns:_
