@@ -1,7 +1,5 @@
 # CS52 Workshops:  Introduction to Bootstrap
 
-![](http://i.giphy.com/eUh8NINbZf9Ys.gif)
-
 Brief motivation here as well as in presentation
 
 ## Overview
