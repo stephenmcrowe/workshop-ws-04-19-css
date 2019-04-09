@@ -48,7 +48,7 @@ For Python 3:
 python -m http.server
 ```
 
-Visit http://localhost:9000 to see your page running. This should be second nature to you after the first few class labs! Your webpage should look something like this: 
+Visit http://localhost:8000 to see your page running. This should be second nature to you after the first few class labs! Your webpage should look something like this: 
 ![screenshot of webpage](images/webpage_screenshot.png)
 
 ## Part 2: Build Using Bootstrap
@@ -125,6 +125,8 @@ Finally, make your content automatically collapse into a hamburger menu:
 </button>
 ```
 This code creates a little hamburger menu to hold nav bar content upon collapse. Otherwise, collapsing the screen just makes the nav bar items look like they have disappeared.
+
+Refresh your local page, and try re-sizing the browser to see the mobile responsiveness in action! The creators of Bootstrap already did the work of implementing navigation items and re-sizing, saving you time (no more checkbox hack needed!).
 
 ### Give your webpage a welcome component.
 ```html
@@ -222,7 +224,9 @@ Within this frame, plug in this code:
 
 Everything should end up looking something like this... 
  
-![final product example](https://media.giphy.com/media/bTEjUk5U8mZZ1RtJyS/giphy.gif)
+<video>
+  <source src="images/demo_example.mov" type="video/mp4">
+</video>
 
 What the heck?!?!? That’s so much code, what does it mean?? It’s not as complicated as it looks. To create a carousel, we basically just create a bunch of slides and buttons. First, in the ordered list (```<ol>```) with the class value ```carousel-indicators```, we define our clickable slide indicators visible underneath the caption on every slide. Next, we create divs to hold our images and text, which function as our slides. We use the indicators and the class value ```active``` to control which side is displayed. Finally, we create some controls (the little arrows) to make carousel navigation simpler.
 
@@ -246,29 +250,53 @@ Open up style.css and plug in the following code:
 ```
 The first section of this code adds a background image to the div with the id “landing” and class “jumbotron.” The second section changes the color of the text in that same div to be more visible on the image. It’s a simple example, but it shows how any bit of the Bootstrap library is customizable because it is fundamentally based on CSS (and occasional JavaScript).
 
-Fun Fact: Bootstrap 4 is based on Flexbox, but Bootstrap 3 is based on floats!
+Fun Fact: Bootstrap 4 is based on Flexbox, but Bootstrap 3 (and earlier versions) is based on floats!
 
-## Extras:
+## Extras
 Tired of hosting things in gh-pages? Surge is a really easy way to quickly deploy projects. If you’re interested in deploying this site, first install surge using a package manager of your choice (brew, npm, yarn, etc.):
 ```npm install --global surge```
 Next, navigate to the directory your project is in and run:
 ```surge```
 You’ll be asked to verify the directory you want to deploy and to confirm a name for your project. Work through the prompts, and you will be provided a URL that is almost immediately active with a deployed version of your project. More information on surge deployment can be found at <https://surge.sh/>.
 
-## Summary / What you Learned
+![final product example](https://media.giphy.com/media/bTEjUk5U8mZZ1RtJyS/giphy.gif)
 
-* [ ] Bootstrap makes building functional UI for web apps (emphasis: mobile) easy! 
-* [ ] Contains scaffolding with column grid system, CSS, JS, glyphicons
-* [ ] add more
+## Final Product
+
+Congrats! If everything went to plan, you should have a functioning website running on your local host that dynamically scales when you resize the window! Check out our example, deployed with Surge, [here](http://cs52-bootstrap-workshop.surge.sh/).
+
+At this point you should have:
+* A nav bar that resizes to a hamburger menu in mobile
+* A primary CTA button
+* Column-based text that re-arranges in mobile
+* A carousel of images
+* Minor customizations in CSS
+
+## Summary
+
+Bootstrap is a dynamic, easy-to-use, and **free** front-end framework that adds quicker functionality and syntax to basic HTML and CSS. You can use it's class-based identification system to place items in flexbox-style grids. It also has a series of custom-made HTML components like buttons, cards, and jumbotrons, to simplify the process of styling your site. Still, Bootstrap has some limitations in customizability and can result in very standard-looking websites. 
+
+All around, it's perfect for creating quick websites without worrying about the semantics of flexboxes and default HTML stylings.
+
+## Learning Objectives
+
+After completing this tutorial and getting a working site together, you should have a much better idea of the fundamentals of Bootstrap. At this point, you should:
+
+* [ ] Understand how to import Bootstrap directly through CDN
+* [ ] Grasp Bootstrap's dynamic container and 12-column grid model
+* [ ] Know how to use Bootstrap components, such as buttons, in your HTML
+* [ ] Understand how to override Bootstrap CSS to implement custom styles
+* [ ] Recognize the limitations of Bootstrap
+* [ ] Be able to use Bootstrap to quickly create dynamic sites whenever you need!
 
 ## Reflection
 
-*2 questions for the workshop participants to answer (very short answer) when they submit the workshop. These should try to get at something core to the workshop, the what and the why.*
+Time to get reflective. 
 
-* [ ] 2 reflection questions
-* [ ] Bootstrap is so easy and quick and makes things pretty!! So, what are some issues/downsides you could see running into by using Bootstrap in the industry?
+* [ ] When do you think you might be able to use Bootstrap in the future? When would you not want to?
+* [ ] What are some issues/downsides you could run into by using Bootstrap in industry?
 
-## Sources:
+## Sources
 * Background on Bootstrap from:
   * <https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp>
 * Bootstrap Documentation used heavily for code snippets:
