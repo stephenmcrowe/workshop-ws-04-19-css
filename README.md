@@ -19,6 +19,10 @@ We're going to show you how to quickly put together a website with basic compone
 
 Tutorial time: insert here 
 
+Here's what we're going to create!
+
+![final product example](https://media.giphy.com/media/bTEjUk5U8mZZ1RtJyS/giphy.gif)
+
 ## Part 1: Setup + Creating a Locally Hosted Webpage
 
 Create a new folder. Locate that folder, and create empty HTML and CSS files in it using your text editor or the command line:
@@ -258,8 +262,6 @@ Tired of hosting things in gh-pages? Surge is a really easy way to quickly deplo
 Next, navigate to the directory your project is in and run:
 ```surge```
 You’ll be asked to verify the directory you want to deploy and to confirm a name for your project. Work through the prompts, and you will be provided a URL that is almost immediately active with a deployed version of your project. More information on surge deployment can be found at <https://surge.sh/>.
-
-![final product example](https://media.giphy.com/media/bTEjUk5U8mZZ1RtJyS/giphy.gif)
 
 ## Final Product
 
