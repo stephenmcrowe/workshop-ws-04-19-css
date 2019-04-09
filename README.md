@@ -4,7 +4,7 @@ Bootstrap is the most popular front-end framework on the web, and we're going to
 
 ![yay memes](images/meme2.jpg)
 
-![yay memes part deux](images/meme2.png) 
+![yay memes part deux](images/meme1.png) 
 
 ## Overview
 
@@ -222,7 +222,7 @@ Within this frame, plug in this code:
 
 Everything should end up looking something like this... 
 
-![example of our demo](images/demo_example) 
+![example of our demo](images/demo_example.mov) 
 
 What the heck?!?!? That’s so much code, what does it mean?? It’s not as complicated as it looks. To create a carousel, we basically just create a bunch of slides and buttons. First, in the ordered list (```<ol>```) with the class value ```carousel-indicators```, we define our clickable slide indicators visible underneath the caption on every slide. Next, we create divs to hold our images and text, which function as our slides. We use the indicators and the class value ```active``` to control which side is displayed. Finally, we create some controls (the little arrows) to make carousel navigation simpler.
 
